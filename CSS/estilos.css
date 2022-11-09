@@ -1,0 +1,888 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.tag {
+    opacity: 0;
+    transform: translate(10vh, 0);
+    transition: all 1s;
+}
+
+.tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: #ededed;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.kolorea {
+    background-color: #222526;
+}
+
+
+
+header {
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    width: 90%;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.logo p {
+    color: white;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+
+
+.ida:hover img {
+    animation: ida 20s infinite linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes ida {
+
+
+    0% {
+        transform: rotate(-190deg);
+    }
+
+    0.65% {
+        transform: rotate(190deg);
+    }
+
+    0.7% {
+        content: url("../MULTIMEDIA/ICONOS/flecha.png");
+        rotate: -190deg;
+    }
+
+    100% {
+        content: url("../MULTIMEDIA/ICONOS/flecha.png");
+        
+    }
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    background-color: #222526;
+    padding: 28px 30px;
+    font-size: 12px;
+}
+
+
+nav img {
+    margin: 0;
+    height: 30px;
+}
+
+nav a:hover {
+    background-color: #992A2E;
+    transition: 0.5s;
+
+}
+
+.marka {
+    background-color: #992A2E;
+}
+
+.contenedor {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+.hijo {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.parte10 {
+    height: 400px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.parte2 {
+    background-color: #fff;
+    grid-column: 1/3;
+    margin-right: 1em;
+    width: 66%;
+}
+
+.parte3 {
+    background-color: #fff;
+    width: 33%;
+}
+
+.cnmrg {
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    height: 65px;
+    border-left: solid 5px darkred;
+    /*************/
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /*************/
+    border-start-start-radius: 5px;
+    border-bottom: 1px #E6E6E6 solid;
+}
+
+.txapelketa {
+    display: inline-block;
+}
+
+.jaurnaldia {
+    width: 150px;
+    display: inline-block;
+}
+
+.taldea {
+    width: 150px;
+    display: inline-block;
+}
+
+.contenedorgrid1 {
+    margin: 0 auto;
+    font-size: 12px;
+    font-weight: bold;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 40% 28% 28%;
+    gap: 15px;
+    padding-bottom: 20px;
+}
+
+.contenedorgrid1 h4 {
+    margin-bottom: 10px;
+}
+
+.grid1 {
+    grid-column: 1/2;
+    width: 100%;
+    align-items: center;
+}
+
+.grid2 {
+    grid-column: 2/3;
+    width: 100%;
+    align-items: center;
+}
+
+.grid3 {
+    grid-column: 3/4;
+    width: 100%;
+    align-items: center;
+}
+
+
+.ptaldea {
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    margin: 0;
+    height: 50px;
+    border: 1px #E6E6E6 solid;
+
+    /*************/
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /*************/
+}
+
+.ptxapelketa {
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    margin: 0;
+    height: 50px;
+    border: 1px #E6E6E6 solid;
+    /*************/
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /*************/
+}
+
+.pjaurnaldia {
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    margin: 0;
+    height: 50px;
+    border: 1px #E6E6E6 solid;
+    /*************/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*************/
+}
+
+/*******************************************************************/
+
+.emaitzak {
+    margin: 0 auto;
+    display: flex;
+    /* height: 65px; */
+    border-top: 1px #E6E6E6 solid;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.emaitza1 {
+    display: flex;
+    height: 65px;
+    text-align: left;
+    min-width: 184px;
+}
+
+.emaitza2 {
+    display: flex;
+    height: 65px;
+    margin-bottom: 6px;
+}
+
+.alineatu {
+    /*************/
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /*************/
+}
+
+.data {
+    color: B9B9B9;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 10px;
+
+}
+
+.taldeak {
+    color: darkred;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.parent {
+    display: grid;
+    height: 65px;
+    width: 540px;
+    grid-template-columns: 1fr 55px 70px 55px 1fr;
+
+    grid-template-rows: 65px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 {
+    color: #3D3D3D;
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 16px;
+    font-weight: bold;
+    /*************/
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /*************/
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+    /*************/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*************/
+}
+
+.div3 {
+    grid-area: 1 / 3 / 2 / 4;
+    /*************/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*************/
+}
+
+.div4 {
+    grid-area: 1 / 4 / 2 / 5;
+    /*************/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*************/
+}
+
+.div5 {
+    color: #3D3D3D;
+    grid-area: 1 / 5 / 2 / 6;
+    font-size: 16px;
+    font-weight: bold;
+    /*************/
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /*************/
+}
+
+.div2 img {
+    height: 40px;
+}
+
+.div4 img {
+    height: 40px;
+}
+
+.partiduemaitza {
+    color: darkred;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.denboraldiemaitza {
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 15px;
+    width: 50px;
+    border: 1px solid #B9B9B9;
+    background-color: #B9B9B9;
+}
+
+/********************************************************************/
+
+#snmrg {
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    height: 65px;
+    border-left: solid 5px darkred;
+    /*************/
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /*************/
+    border-start-start-radius: 5px;
+    border-bottom: 1px #E6E6E6 solid;
+}
+
+#berriakedukia {
+    /*************/
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /*************/
+    border-bottom: 1px #E6E6E6 solid;
+}
+
+/*************/
+
+.imgberri {
+    height: 80px;
+    margin: 12px 0px;
+}
+
+.txtberriak {
+    height: 80px;
+    margin: 12px 0px;
+}
+
+/*************/
+
+.imgberri img {
+    width: 80px;
+    height: 80px;
+    margin: 0 20px;
+}
+
+.bff {
+    color: white;
+    font-weight: 900;
+    width: 30px;
+    height: 15px;
+    margin: 0;
+    display: block;
+    font-size: 9px;
+    background-color: #992A2E;
+    border-radius: 3px;
+    /*************/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*************/
+}
+
+.txtberriak h5 {
+    width: 95%;
+    margin: 5.5px 0;
+    display: block;
+    font-size: 15px;
+}
+
+.databerriak {
+    margin: 0;
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#printzipala {
+    text-align: left;
+}
+
+.aita {
+    width: 100%;
+    height: 350px;
+    position: relative;
+
+    /*************/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*************/
+
+
+
+    animation: asd 15s infinite linear;
+}
+
+.semea {
+    font-size: 75px;
+    color: white;
+    font-weight: bold;
+}
+
+.espazioa {
+    height: 205.9px;
+}
+
+
+@keyframes asd {
+    0% {
+        background: url("../MULTIMEDIA/BANNER/final1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    30% {
+        background: url("../MULTIMEDIA/BANNER/final1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    33.33% {
+        background: url("../MULTIMEDIA/BANNER/final2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    63% {
+        background: url("../MULTIMEDIA/BANNER/final2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    66.66% {
+        background: url("../MULTIMEDIA/BANNER/final3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    98% {
+        background: url("../MULTIMEDIA/BANNER/final3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    100% {
+        background: url("../MULTIMEDIA/BANNER/final1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+}
+
+.arriba {
+    background-color: #191B1C;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.arriba p {
+    font-size: 10px;
+    color: white;
+    display: flex;
+    margin-right: 5%;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/*:::::Pie de Pagina*/
+.pie-pagina {
+    width: 100%;
+    background-color: #191B1C;
+}
+
+.grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+figure img {
+    width: 250px;
+}
+
+.box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #222526;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.red-social a:hover {
+    color: rgb(253, 75, 75);
+}
+
+.grupo-2 {
+    background-color: #222526;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.grupo-2:hover {
+    color: #992A2E;
+}
+
+.grupo-2 small {
+    font-size: 15px;
+}
+
+
+.oculto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    background: #000000af;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0%;
+    -moz-transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+
+.div-oculto {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    width: 70%;
+    background-color: #ededed;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 8px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+form label {
+    width: 72px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 400px;
+    height: 40px;
+    padding: 3px 10px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+form input[type="submit"] {
+    width: 400px;
+    padding: 8px 16px;
+    margin-top: 32px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: block;
+    color: #fff;
+    background-color: #000;
+}
+
+textarea {
+    width: 400px;
+    height: 100px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+    /*resize: vertical | horizontal | none | both*/
+    resize: none;
+    display: block;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.logo-argazkia {
+    cursor: pointer;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #992A2E;
+    line-height: 42px;
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.1em;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(153, 42, 46, 1) 0px 0px 2.5px;
+}
+
+.logo-argazkia {
+    height: 50px;
+    width: 50px;
+}
+
+.logo-argazkia img {
+    height: 30px;
+    width: 30px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked~.oculto {
+    z-index: 19;
+    opacity: 100%;
+}
+
+@media screen and (max-width:800px) {
+    .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+@media (max-width:1235px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-top: 7px;
+        margin-left: 0px;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+
+    .logo-argazkia {
+        padding: 18.5px 30px;
+    }
+
+    nav {
+        padding: 10px 0px 0px 0px;
+        font-size: 14px;
+        margin: 0px;
+    }
+
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .contenedorgrid1 {
+        text-align: left;
+        display: block;
+    }
+
+    .grid1 {
+        padding: 10px 0;
+        border-bottom: 1px #E6E6E6 solid;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .grid2 {
+        padding: 10px 0;
+        border-bottom: 1px #E6E6E6 solid;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .grid3 {
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cnmrg {
+        margin-bottom: 0px;
+    }
+
+    .ptaldea {
+        width: 80%;
+    }
+
+    .ptxapelketa {
+        width: 80%;
+    }
+
+    .pjaurnaldia {
+        width: 80%;
+    }
+
+    .contenedorgrid1 h4 {
+        margin-bottom: 0;
+    }
+
+    .emaitzak {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .emaitza1 {
+        text-align: center;
+    }
+
+    .emaitza2 {
+        margin-bottom: 10px;
+    }
+
+    .contenedor {
+        width: 90%;
+        margin: 30px auto;
+        display: block;
+    }
+
+    .parte2 {
+        margin-bottom: 30px;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .parte3 {
+        width: 100%;
+    }
+
+    .txtberriak h5 {
+        width: 100%;
+    }
+
+    .data,
+    .taldeak {
+        margin: 0;
+    }
+}

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <title>FutTxurdi</title>
+    <link rel="icon" type="image/x-icon" href="../MULTIMEDIA/ICONOS/logotipo.png">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <input type="checkbox" id="navigation" />
+        <center>
+            <label id="asd" class="logo-argazkia ida" for="navigation" onclick="vuelta()">
+                <img id="vu1" src="../MULTIMEDIA/ICONOS/menu.png">
+            </label>
+        </center>
+        <div class="oculto">
+            <div class="div-oculto">
+                <form action="#" target="" method="get" name="formDatosPersonales">
+
+                    <label for="nombre">Izena</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Idatzi zure izena" />
+
+                    <label for="apellidos">Abizenak</label>
+                    <input type="text" name="apellidos" id="apellidos" placeholder="Idatzi zure abizenak" />
+
+                    <label for="email" />Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" required />
+
+                    <label for="asunto">Gaia</label>
+                    <input type="text" name="asunto" id="asunto" placeholder="Kontaktatzen duen pertsonaren izena" />
+
+                    <label for="mensaje">Mezua</label>
+                    <textarea name="mensaje" for="mensaje"
+                        placeholder="⠀300 Karaktere maximorekin azal ezazu behar duzuna" maxlength="300"></textarea>
+
+                    <input type="submit" name="enviar" value="BIDALI DATUAK" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="arriba">
+        <p>BIZKAIKO FUTBOL FEDERAKUNDEA - FEDERACIÓN VIZCAÍNA DE FÚTBOL</p>
+
+    </div>
+    <div class="abajo"></div>
+
+    <div class="kolorea">
+        <header class="parte1">
+            <a href="../OINARRIA/index.html">
+                <div class="logo">
+                    <img src="../MULTIMEDIA/ICONOS/logotipo.png">
+                    <p>FutTxurdi</p>
+                </div>
+            </a>
+            <nav>
+                <a href="../OINARRIA/index.html" class="nav-link marka">HASIERA</a>
+                <a href="../HTML/klasifikazioa.html" class="nav-link">KLASIFIKAZIOA</a>
+                <a href="../HTML/jokalariak.html" class="nav-link">JOKALARIAK</a>
+                <a href="../HTML/arautegia.html" class="nav-link">ARAUTEGIA</a>
+                <a href="../HTML/covid-neurriak.html" class="nav-link">COVID - 19</a>
+            </nav>
+        </header>
+    </div>
+
+    <div class="aita">
+        <p class="semea">ARGAZKI NAGUSIA</p>
+    </div>
+    <div class="contenedor">
+        <div class="hijo parte2" data-aos="fade-up">
+            <div>
+                <h3 class="cnmrg">⠀EMAITZAK</h3>
+            </div>
+            <div class="contenedorgrid1">
+                <div class="txapelketa grid1">
+                    <H4>TXAPELKETA:</H4>
+                    <select class="ptxapelketa">
+                        <option value="0">LURRALDEKOA OHOREZKO MAILA</option>
+                    </select>
+                </div>
+
+                <div class="jaurnaldia grid2">
+                    <H4>JAURNALDIA:</H4>
+                    <select class="pjaurnaldia" onchange="update(this.value)">
+                        <option value="0">JAURNALDIA 1</option>
+                        <option value="1">JAURNALDIA 2</option>
+                        <option value="2">JAURNALDIA 3</option>
+                        <option value="3">JAURNALDIA 4</option>
+                        <option value="4">JAURNALDIA 5</option>
+                        <option value="5">JAURNALDIA 6</option>
+                        <option value="6">JAURNALDIA 7</option>
+                        <option value="7">JAURNALDIA 8</option>
+                        <option value="8">JAURNALDIA 9</option>
+                        <option value="9">JAURNALDIA 10</option>
+                    </select>
+                </div>
+                <div class="taldea grid3">
+                    <H4>TALDEA:</H4>
+                    <select class="ptaldea">
+                        <option value="0">TALDEA 1</option>
+                    </select>
+                </div>
+            </div>
+            <div class="emaitzak tag">
+                <div class="emaitza1">
+                    <div class="alineatu">
+                        <p><span class="data">2022/09/05 12:00</span>
+                            <br> <span class="taldeak">SAN MAMES</span></p>
+                    </div>
+                </div>
+                <div class="emaitza2">
+                    <div class="emaitzaalineatu">
+
+                        <div class="parent">
+                            <div class="div1">ATHLETIC BILBAO</div>
+                            <div class="div2"><img src="../MULTIMEDIA/ICONOS/logotalde1.png" alt=""></div>
+                            <div class="div3">
+                                <div class="alineatu">
+                                    <p><span class="partiduemaitza">6 - 2</span>
+                                        <br>
+                                        <span class="denboraldiemaitza">⠀1 - 2⠀</span></p>
+                                </div>
+                            </div>
+                            <div class="div4"><img src="../MULTIMEDIA/ICONOS/barcelona.png" alt=""></div>
+                            <div class="div5">BARCELONA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="emaitzak tag">
+                <div class="emaitza1">
+                    <div class="alineatu">
+                        <p><span class="data">2022/09/08 14:20</span>
+                            <br> <span class="taldeak">ALFONSO PEREZ</span></p>
+                    </div>
+                </div>
+                <div class="emaitza2">
+                    <div class="emaitzaalineatu">
+
+                        <div class="parent">
+                            <div class="div1">GETAFE</div>
+                            <div class="div2"><img src="../MULTIMEDIA/ICONOS/getafe.png" alt=""></div>
+                            <div class="div3">
+                                <div class="alineatu">
+                                    <p><span class="partiduemaitza">3 - 2</span>
+                                        <br>
+                                        <span class="denboraldiemaitza">⠀0 - 4⠀</span></p>
+                                </div>
+                            </div>
+                            <div class="div4"><img src="../MULTIMEDIA/ICONOS/espanyol.png" alt=""></div>
+                            <div class="div5">ESPANYOL</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="emaitzak tag">
+                <div class="emaitza1">
+                    <div class="alineatu">
+                        <p><span class="data">2022/09/13 09:20</span>
+                            <br> <span class="taldeak">CIVITAS METROPOLITANO</span></p>
+                    </div>
+                </div>
+                <div class="emaitza2">
+                    <div class="emaitzaalineatu">
+
+                        <div class="parent">
+                            <div class="div1">ATL. MADRID</div>
+                            <div class="div2"><img src="../MULTIMEDIA/ICONOS/atletico.png" alt=""></div>
+                            <div class="div3">
+                                <div class="alineatu">
+                                    <p><span class="partiduemaitza">1 - 7</span>
+                                        <br>
+                                        <span class="denboraldiemaitza">⠀2 - 2⠀</span></p>
+                                </div>
+                            </div>
+                            <div class="div4"><img src="../MULTIMEDIA/ICONOS/real madrid.png" alt=""></div>
+                            <div class="div5">REAL MADRID</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="emaitzak tag">
+                <div class="emaitza1">
+                    <div class="alineatu">
+                        <p><span class="data">2022/09/17 09:40</span>
+                            <br> <span class="taldeak">SON MOIX</span></p>
+                    </div>
+                </div>
+                <div class="emaitza2">
+                    <div class="emaitzaalineatu">
+
+                        <div class="parent">
+                            <div class="div1">MAYORCA</div>
+                            <div class="div2"><img src="../MULTIMEDIA/ICONOS/mayorca.png" alt=""></div>
+                            <div class="div3">
+                                <div class="alineatu">
+                                    <p><span class="partiduemaitza">4 - 1</span>
+                                        <br>
+                                        <span class="denboraldiemaitza">⠀0 - 3⠀</span></p>
+                                </div>
+                            </div>
+                            <div class="div4"><img src="../MULTIMEDIA/ICONOS/rayo vallecano.png" alt=""></div>
+                            <div class="div5">RAYO VALLECANO</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="emaitzak tag">
+                <div class="emaitza1">
+                    <div class="alineatu">
+                        <p><span class="data">2022/09/21 08:40</span>
+                            <br> <span class="taldeak">BALAIDOS</span></p>
+                    </div>
+                </div>
+                <div class="emaitza2">
+                    <div class="emaitzaalineatu">
+
+                        <div class="parent">
+                            <div class="div1">CELTA</div>
+                            <div class="div2"><img src="../MULTIMEDIA/ICONOS/celta.png" alt=""></div>
+                            <div class="div3">
+                                <div class="alineatu">
+                                    <p><span class="partiduemaitza">2 - 3</span>
+                                        <br>
+                                        <span class="denboraldiemaitza">⠀1 - 2⠀</span></p>
+                                </div>
+                            </div>
+                            <div class="div4"><img src="../MULTIMEDIA/ICONOS/elche.png" alt=""></div>
+                            <div class="div5">ELCHE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="emaitzak tag">
+                <div class="emaitza1">
+                    <div class="alineatu">
+                        <p><span class="data">2022/09/29 08:00</span>
+                            <br> <span class="taldeak">BENITO VILLAMARIN</span></p>
+                    </div>
+                </div>
+                <div class="emaitza2">
+                    <div class="emaitzaalineatu">
+
+                        <div class="parent">
+                            <div class="div1">BETIS</div>
+                            <div class="div2"><img src="../MULTIMEDIA/ICONOS/betis.png" alt=""></div>
+                            <div class="div3">
+                                <div class="alineatu">
+                                    <p><span class="partiduemaitza">3 - 1</span>
+                                        <br>
+                                        <span class="denboraldiemaitza">⠀2 - 1⠀</span></p>
+                                </div>
+                            </div>
+                            <div class="div4"><img src="../MULTIMEDIA/ICONOS/real sociedad.png" alt=""></div>
+                            <div class="div5">REAL SOCIEDAD</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="emaitzak tag">
+                <div class="emaitza1">
+                    <div class="alineatu">
+                        <p><span class="data">2022/10/02 13:00</span>
+                            <br> <span class="taldeak">LA CERAMICA</span></p>
+                    </div>
+                </div>
+                <div class="emaitza2">
+                    <div class="emaitzaalineatu">
+
+                        <div class="parent">
+                            <div class="div1">VILLAREAL</div>
+                            <div class="div2"><img src="../MULTIMEDIA/ICONOS/villareal.png" alt=""></div>
+                            <div class="div3">
+                                <div class="alineatu">
+                                    <p><span class="partiduemaitza">1 - 1</span>
+                                        <br>
+                                        <span class="denboraldiemaitza">⠀2 - 0⠀</span></p>
+                                </div>
+                            </div>
+                            <div class="div4"><img src="../MULTIMEDIA/ICONOS/sevilla.png" alt=""></div>
+                            <div class="div5">SEVILLA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="emaitzak tag">
+                <div class="emaitza1">
+                    <div class="alineatu">
+                        <p><span class="data">2022/10/09 11:30</span>
+                            <br> <span class="taldeak">NUEVO MIRANDILLA</span></p>
+                    </div>
+                </div>
+                <div class="emaitza2">
+                    <div class="emaitzaalineatu">
+
+                        <div class="parent">
+                            <div class="div1">CADIZ</div>
+                            <div class="div2"><img src="../MULTIMEDIA/ICONOS/cadiz.png" alt=""></div>
+                            <div class="div3">
+                                <div class="alineatu">
+                                    <p><span class="partiduemaitza">3 - 2</span>
+                                        <br>
+                                        <span class="denboraldiemaitza">⠀3 - 1⠀</span></p>
+                                </div>
+                            </div>
+                            <div class="div4"><img src="../MULTIMEDIA/ICONOS/valladolid.png" alt=""></div>
+                            <div class="div5">VALLADOLID</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="emaitzak tag">
+                <div class="emaitza1">
+                    <div class="alineatu">
+                        <p><span class="data">2022/10/20 11:30</span>
+                            <br> <span class="taldeak">MESTALLA</span></p>
+                    </div>
+                </div>
+                <div class="emaitza2">
+                    <div class="emaitzaalineatu">
+
+                        <div class="parent">
+                            <div class="div1">VALENCIA</div>
+                            <div class="div2"><img src="../MULTIMEDIA/ICONOS/valencia.png" alt=""></div>
+                            <div class="div3">
+                                <div class="alineatu">
+                                    <p><span class="partiduemaitza">1 - 3</span>
+                                        <br>
+                                        <span class="denboraldiemaitza">⠀1 - 2⠀</span></p>
+                                </div>
+                            </div>
+                            <div class="div4"><img src="../MULTIMEDIA/ICONOS/girona.png" alt=""></div>
+                            <div class="div5">GIRONA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="emaitzak tag">
+                <div class="emaitza1">
+                    <div class="alineatu">
+                        <p><span class="data">2022/09/02 12:40</span>
+                            <br> <span class="taldeak">LOS JUEGOS MEDITERR.</span></p>
+                    </div>
+                </div>
+                <div class="emaitza2">
+                    <div class="emaitzaalineatu">
+
+                        <div class="parent">
+                            <div class="div1">ALMERIA</div>
+                            <div class="div2"><img src="../MULTIMEDIA/ICONOS/almeria.png" alt=""></div>
+                            <div class="div3">
+                                <div class="alineatu">
+                                    <p><span class="partiduemaitza">4 - 3</span>
+                                        <br>
+                                        <span class="denboraldiemaitza">⠀3 - 0⠀</span></p>
+                                </div>
+                            </div>
+                            <div class="div4"><img src="../MULTIMEDIA/ICONOS/osasuna.png" alt=""></div>
+                            <div class="div5">OSASUNA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="hijo parte3">
+            <div id="printzipala">
+                <h3 id="snmrg">⠀AZKEN BERRIAK</h3>
+                <div id="berriakedukia">
+                    <div class="imgberri">
+                        <img src="../MULTIMEDIA/IMG/teresagutierrezleal.jpg" alt="">
+                    </div>
+                    <div class="txtberriak">
+                        <p class="bff">BFF</p>
+                        <h5>TERESA GUTIERREZ LEAL ANDREAREN HERIOTZA</h5>
+                        <p class="databerriak">ASTEAZKENA, 2022KO URRIAK 5</p>
+                    </div>
+                </div>
+                <div id="berriakedukia">
+                    <div class="imgberri">
+                        <img src="../MULTIMEDIA/IMG/jonandergonzalez.jpg" alt="">
+                    </div>
+                    <div class="txtberriak">
+                        <p class="bff">BFF</p>
+                        <h5>HITZALDIA JON ANDER GONZALEZ 2. ARBITROA</h5>
+                        <p class="databerriak">ASTEAZKENA, 2022KO URRIAK 5</p>
+                    </div>
+                </div>
+                <div id="berriakedukia">
+                    <div class="imgberri">
+                        <img src="../MULTIMEDIA/IMG/reglas.png" alt="">
+                    </div>
+                    <div class="txtberriak">
+                        <p class="bff">BFF</p>
+                        <h5>ARETO FUTBOLEKO TXAPELKETAKO ARAU BERRIAK</h5>
+                        <p class="databerriak">ASTEAZKENA, 2022KO URRIAK 5</p>
+                    </div>
+                </div>
+                <div id="berriakedukia">
+                    <div class="imgberri">
+                        <img src="../MULTIMEDIA/IMG/luismariaelustondo.jpg" alt="">
+                    </div>
+                    <div class="txtberriak">
+                        <p class="bff">BFF</p>
+                        <h5>LUIS ELUSTONDO CIARRETA JAUNAREN HERIOTZA</h5>
+                        <p class="databerriak">ASTEAZKENA, 2022KO URRIAK 5</p>
+                    </div>
+                </div>
+                <div id="berriakedukia">
+                    <div class="imgberri">
+                        <img src="../MULTIMEDIA/IMG/goizaldelezamiz.jpg" alt="">
+                    </div>
+                    <div class="txtberriak">
+                        <p class="bff">BFF</p>
+                        <h5>GOIZALDE LEZAMIZ GARCIA ANDREAREN HERIOTZA</h5>
+                        <p class="databerriak">ASTEAZKENA, 2022KO URRIAK 5</p>
+                    </div>
+                </div>
+                <div id="berriakedukia">
+                    <div class="imgberri">
+                        <img src="../MULTIMEDIA/IMG/bulegoa.jfif" alt="">
+                    </div>
+                    <div class="txtberriak">
+                        <p class="bff">BFF</p>
+                        <h5>JENDEARENTZAKO ARRETA - BULEGOA</h5>
+                        <p class="databerriak">ASTEAZKENA, 2022KO URRIAK 5</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../MULTIMEDIA/ICONOS/persona.png" alt="Logo de SLee Dw">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>GURI BURUZ</h2>
+                <p>Txurdinagako ikasleak gara Haimar, Xabier, Matias eta Aimar dira gure izenak.</p>
+                <p>Informatika goi maila ikasten ari gara eta web orri hau egin dugu 1º Erronkarako.</p>
+            </div>
+            <div class="box">
+                <h2>SARE SOZIALAK</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>Talde 5</b> - Eskubide Guztiak Erretserbatuta.</small>
+        </div>
+    </footer>
+    <script>
+        let open = true
+        function vuelta() {
+            let pika = document.getElementById("vu1")
+            let pikapika = document.getElementById("asd")
+
+            if(open) {
+                $(pikapika).removeClass("ida");
+                pika.style.content = "url('/MULTIMEDIA/ICONOS/flecha.png')"
+                pika.style.transform += "rotate(180deg)";
+                pika.style.transitionDuration = "1s";
+                
+            } else {
+                $(pikapika).addClass("ida"); 
+                pika.style.content = "url('/MULTIMEDIA/ICONOS/menu.png')"
+                pika.style.transform = "rotate(0deg)";
+            }
+            open = !open;
+        }
+    </script>
+</body>
+
+<script>
+    function update(val) {
+        val++;
+        window.location = `./index${val}.html`;
+    }
+</script>
+<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="../OINARRIA/index.js" type="text/javascript"></script>
+
+</html>
